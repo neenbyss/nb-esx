@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js" defer></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <script src="nui.js" defer></script>
+    <link rel="stylesheet" href="nui.css">
+</head>
+<body id="app">
+    <div v-if="coords" id="coords">
+        <div @click="copyToClipboard('vector3',true)" class="clip_coords">{{vector3}}</div>
+        <div @click="copyToClipboard('vector3',true)" class="clip_coords">{{vector4}}</div>
+        <div @click="copyToClipboard('coords',true)" class="clip_coords">{{coords}}</div>
+        <div @click="copyToClipboard('coords2',true)" class="clip_coords">{{coords2}}</div>
+        <div @click="nui('close', { action: 'coords' })" class="close">Cerrar</div>
+    </div>
+</body>
+</html>

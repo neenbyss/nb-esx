@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#coords {
+    width: 40vw;
+    height: auto;
+    background: #1a245c91;
+    padding: 1vw;
+    border-radius: .75vw;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+.clip_coords {
+    padding: .5vw;
+    background: #1a245c;
+    cursor: pointer;
+    border-radius: .75vw;
+}
+.clip_coords:hover {
+    background: #1a3e5f71;
+}
+
+.close {
+    padding: .3vw;
+    background: #1a3e5f9c;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: .2vw;
+}
