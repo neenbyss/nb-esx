@@ -11,10 +11,10 @@
 </head>
 <body id="app">
     <div v-if="coords" id="coords">
-        <div @click="copyToClipboard('vector3',true)" class="clip_coords">{{vector3}}</div>
-        <div @click="copyToClipboard('vector3',true)" class="clip_coords">{{vector4}}</div>
-        <div @click="copyToClipboard('coords',true)" class="clip_coords">{{coords}}</div>
-        <div @click="copyToClipboard('coords2',true)" class="clip_coords">{{coords2}}</div>
+        <div @click="copyToClipboard('vector3',true)" class="clip_coords">{{vector3}} <span class="coords_title">vector3</span> <svg-clipboard class-name="coords_icon"></svg-clipboard></div>
+        <div @click="copyToClipboard('vector3',true)" class="clip_coords">{{vector4}} <span class="coords_title">vector4</span> <svg-clipboard class-name="coords_icon"></svg-clipboard></div>
+        <div @click="copyToClipboard('coords',true)" class="clip_coords">{{coords}} <span class="coords_title">x y z</span> <svg-clipboard class-name="coords_icon"></svg-clipboard></div>
+        <div @click="copyToClipboard('coords2',true)" class="clip_coords">{{coords2}} <span class="coords_title">x y z</span> <svg-clipboard class-name="coords_icon"></svg-clipboard></div>
         <div @click="nui('close', { action: 'coords' })" class="close">Cerrar</div>
     </div>
 </body>

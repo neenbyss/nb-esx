@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,33 +13,63 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    font-family: "Quicksand", sans-serif;
 }
 
 #coords {
     width: 40vw;
     height: auto;
-    background: #1a245c91;
-    padding: 1vw;
+    background: #1c1e23e4;
+    padding: 2.5vw 1vw;
     border-radius: .75vw;
     display: flex;
-    flex-direction: column;
-    gap: .5vw;
+    flex-direction: column;;
+    gap: 2vw;
 }
 
 .clip_coords {
-    padding: .5vw;
-    background: #1a245c;
+    position: relative;
+    padding: .4vw .75vw;
+    background: #1c2137;
     cursor: pointer;
-    border-radius: .75vw;
+    border-radius: .5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1vw;
 }
+
 .clip_coords:hover {
-    background: #1a3e5f71;
+    background: #21273f;
+}
+
+.coords_title {
+    position: absolute;
+    top: -1.3vw;
+    background: #141829;
+    padding: .1vw .5vw;
+    border-radius: .2vw;
+}
+
+.coords_icon {
+    padding: 0.5vw;
+    background: #29304f;
+    border-radius: .5vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    stroke: white;
+    fill: none;
 }
 
 .close {
     padding: .3vw;
-    background: #1a3e5f9c;
+    background: #a384ff;
     cursor: pointer;
-    width: fit-content;
+    width: 100%;
+    text-align: center;
     border-radius: .2vw;
+}
+
+.close:hover {
+    background: #9876ff;
 }
